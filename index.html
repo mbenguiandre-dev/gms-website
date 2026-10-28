@@ -1,482 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>GMS · Guesmans Arquitectura, Construções &amp; Serviços</title>
+  <meta name="description" content="A GMS projecta, licencia e constrói em Angola. Arquitectura, construção civil, interiores, exteriores e fiscalização de obra com uma só equipa.">
+  <meta property="og:title" content="GMS · Do traço ao betão">
+  <meta property="og:description" content="Arquitectura, construção e serviços técnicos em Angola.">
+  <meta property="og:image" content="assets/img/obra-engenheiro.jpg">
+  <meta name="theme-color" content="#262523">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cursor.css">
 </head>
 <body>
-  <div class="black">
-    <div class="content-black">
-      <p>(+244) 927 883 820</p>
-      <p>guemansgerall@gmail.com</p>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="mono">Luanda, Angola · 8°50′S 13°14′E</span>
+      <div class="topbar-links">
+        <a href="tel:+244927883820">(+244) 927 883 820</a>
+        <a href="mailto:guemansgerall@gmail.com">guemansgerall@gmail.com</a>
+      </div>
     </div>
   </div>
-  <header>
-    <nav class="header" >
-      <h1 class="logo"><img src="assets/logotipo.png" alt=""></h1>
-      <ul>
-        <li><a href="#">inicio  <img src="assets/icons/logos_expo-icon.svg" alt=""></a></li>
-        <li><a href="#">Blog <img src="assets/icons/logos_expo-icon.svg" alt=""></i></a></li>
-        <li><a href="#">páginas <img src="assets/icons/logos_expo-icon.svg" alt=""></i> </a></li>
-        <li><a href="#">Lojas <img src="assets/icons/logos_expo-icon.svg" alt=""></i></a></li>
-        <li><a href="#">contacto <img src="assets/icons/logos_expo-icon.svg" alt=""></i></a></li>
+
+  <header class="site-header" id="topo">
+    <nav class="wrap nav" aria-label="Navegação principal">
+      <a class="brand" href="#topo" aria-label="GMS, início">
+        <img src="assets/logotipo.png" alt="" width="44" height="44">
+        <span class="brand-text">
+          <strong>GMS</strong>
+          <small>Guesmans · Arquitectura &amp; Construção</small>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#estudio">Estúdio</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#obras">Obras</a></li>
+        <li><a href="#diario">Diário</a></li>
+        <li class="nav-cta-mobile"><a href="#orcamento">Pedir orçamento</a></li>
       </ul>
-      <div class="icons-list">
-        <img src="assets/icons/ant-design_search-outlined.svg" alt="">
-        <img src="assets/icons/Vector.svg" alt="">
-        <!-- <img src="assets/icons/bars-solid-full.svg" alt=""> -->
-         <button class="menu-toggle" id="menu-toggle">☰</button>
-      </div>
+
+      <a class="btn btn-amber nav-cta" href="#orcamento">Pedir orçamento</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Abrir menu</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
     </nav>
   </header>
-        <!-- hero  -->
-   <section class="hero-container">
-    <div class="hero-left">
-      <small> Nossa principal fonte de </small>
-      <h1>boldixer pro <br> construções </h1>
-      <div class="btns">
-        <button class="btn-yellow"> sobre a empresa</button>
-        <button class="btn-black">solicitar orçamento</button>
+
+  <main id="conteudo">
+
+    <section class="hero grid-paper">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="sheet-label reveal"><span class="axis">A</span> Folha A-00 · Capa</p>
+          <h1 class="hero-title reveal">Do traço<br>ao <span class="hl">betão.</span></h1>
+          <p class="hero-lead reveal">
+            A GMS projecta, licencia e constrói em Angola. Uma só equipa
+            acompanha a sua obra do primeiro levantamento do terreno à
+            entrega das chaves.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-amber" href="#orcamento">Pedir orçamento</a>
+            <a class="link-arrow" href="#obras">Ver obras <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <figure class="hero-figure reveal">
+          <div class="dim dim-top" aria-hidden="true"><span>12.40</span></div>
+          <div class="dim dim-side" aria-hidden="true"><span>9.80</span></div>
+          <div class="hero-photo">
+            <img src="assets/img/obra-engenheiro.jpg" width="1400" height="1166"
+                 alt="Engenheiro da GMS, com capacete e colete da empresa, a rever plantas numa obra em altura">
+          </div>
+          <figcaption class="mono">Fig. 01 — Revisão de plantas em obra</figcaption>
+
+          <dl class="title-block">
+            <div><dt>Gabinete</dt><dd>GMS (SU), Lda</dd></div>
+            <div><dt>Sede</dt><dd>Luanda</dd></div>
+            <div><dt>Especialidades</dt><dd>ARQ · OBR · INT · EXT · FIS</dd></div>
+            <div><dt>Escala</dt><dd>1:1</dd></div>
+            <div><dt>Folha</dt><dd>A-00 / 06</dd></div>
+          </dl>
+        </figure>
       </div>
-    </div>
-    <div class="hero-right">
-      <img src="assets/img/logo.png" alt="Arquitecto guesmance">
-    </div>
-   </section>
-         <!--sobre  -->
-   <section class="sobre ">
-    <div class="sobre-left">
-      <img src="assets/logotipo.png" alt="">
-    </div>
-    <div class="sobre-rigtht">
-      <small>01-sobre nós</small>
-      <h1>Nós ajudamos as pessoas  <br>
-        a elevarem a felicidade</h1>
-      <p>Lorem ipsum dolor sit amet consectetur
-         adipisicing elit. Eius, excepturi ratione quasi
-          quos architecto aperiam harum recusandae qui dolores
-           quaerat labore consectetur voluptates? Ab voluptates qui 
-           natus, eligendi fuga vitae rem autem placeat, aspernatur
-            magni saepe dolorem iste iure animi delectus corrupti 
-        cumque sint? Accusamus sequi autem saepe nemo distinctio!
-      Lorem ipsum dolor sit amet consectetur
-         adipisicing elit. Eius, excepturi ratione quasi
-          quos architecto aperiam harum recusandae qui dolores
-           quaerat labore consectetur voluptates? Ab voluptates qui 
-           natus, eligendi fuga vitae rem autem placeat, aspernatur
-            magni saepe dolorem iste iure animi delectus corrupti 
-        cumque sint? Accusamus sequi autem saepe nemo distinctio!</p>
-        <div class="btns">
-          <button class="btn-yellow">ver mais </button>
-        </div>
-    </div>
-
-   </section>
-
-   <!-- card -->
-
-<section class="servicos">
-    <div class="titulo">
-      <small>04- serviços</small>
-        <h1>Oque fazemos ?</h1>
-
-    </div>
-<div id="cards">
-
-  <div class="card">
-    <img src="" alt="">
-    <p>projectos e decoração <br> de interiores</p>
-    <div class="plus">
-      <img src="assets/icons/plus.svg" alt="">
-    </div>
-  </div>
-
-  <div class="card"> 
-    <img src="" alt="">
-    <p>projectos e paisagismo <br> de exteriores</p>
-    <div class="plus">
-      <img src="assets/icons/plus.svg" alt="">
-   </div>
-  </div>
-
-  <div class="card">
-    <img src="" alt="">
-    <p>projectos residencias  <br> e reformas </p>
-    <div class="plus">
-      <img src="assets/icons/plus.svg" alt="">
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="" alt="">
-    <p>arquitectura e consultória  <br> técnica</p>
-    <div class="plus">
-      <img src="assets/icons/plus.svg" alt="">
-
-    </div>
-  </div>
-</div>
-
- </section>
-
-              <!-- video -->
- <section id="video-container">
-  <div class="video">
-    <video video>
-      <source src="assets/img/WhatsApp Video 2026-06-14 at 20.47.41.mp4" type="video/mp4">
-    </video>
-  </div>
-
-      <!-- barra preta  -->
-       <div class="preto">
-
-         <div class="barra-preta">
-
-          <div class="barra">
-            <h2>2000</h2>
-            <p>projectos prontos</p>
-            <div class="yy">
-              <img src="assets/icons/Vector copy.svg" alt="">
-            </div>
-          </div>
-
-          <div class="barra">
-            <h2>2000</h2>
-            <p> + projectos prontos</p>
-            <div class="yy">
-              <img src="assets/icons/Vector copy.svg" alt="">
-            </div>
-          </div>
-            
-            <div class="barra">
-              <h2>2000</h2>
-            <p> + projectos prontos</p>
-            <div class="yy">
-              <img src="assets/icons/Vector copy.svg" alt="">
-              </div>
-            </div>
-
-          <div class="barra">
-            <h2>2000</h2>
-            <p> + projectos prontos</p>
-            <div class="yy">
-              <img src="assets/icons/Vector copy.svg" alt="">
-              </div>
-            </div>
-          </div>
-       </div>
- </section>
-          <!-- nossos projectos  -->
-  <section class="portofolio">
-    <div class="portofolio-container">
-      <small>06-portofólio</small>
-      <h1>Nossos projectos</h1>
-
-          <!-- cards -->
-      <div class="grid-projecto">
-        <div class="cad">
-          <img src="" alt="">
-          <div class="card-infor">
-            <p>construção <br> Edificio Core  Footprint </p>
-            <div class="plus">
-              <img src="assets/img/Vector.svg" alt="">
-            </div>
-          </div>
-        </div>
-
-        <div class="cad">
-          <img src="" alt="">
-          <div class="card-infor">
-            <p>construção <br> Edificio Core  Footprint </p>
-            <div class="plus">
-              <img src="assets/img/Vector.svg" alt="">
-            </div>
-          </div>
-        </div>
-
-        <div class="cad">
-          <img src="" alt="">
-          <div class="card-infor">
-            <p>construção <br> Edificio Core  Footprint </p>
-            <div class="plus">
-              <img src="assets/img/Vector.svg" alt="">
-            </div>
-          </div>
-        </div>
-
-        <div class="cad">
-          <img src="" alt="">
-          <div class="card-infor">
-            <p>construção <br> Edificio Core  Footprint </p>
-            <div class="plus">
-              <img src="assets/img/Vector.svg" alt="">
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>   
-  </section>
-
-  <!-- orçamento -->
-     <section class="orcamento">
-    
-        <div class="formulario">
-            <h2>Solicite um orçamento completo</h2>
-
-            <form action="#" method="post">
-
-                <input
-                    type="text"
-                    name="nome"
-                    placeholder="Nome completo"
-                    required
-                >
-
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                >
-
-                <input
-                    type="text"
-                    name="assunto"
-                    placeholder="Assunto"
-                    required
-                >
-
-                <input
-                    type="tel"
-                    name="telefone"
-                    placeholder="Telefone"
-                    required
-                >
-
-                <button type="submit">
-                    Solicitar orçamento
-                </button>
-
-            </form>
-        </div>
-
     </section>
 
+    <section class="stats" aria-label="A GMS em números">
+      <div class="wrap stats-grid">
+        <div class="stat" style="--h: 34%">
+          <span class="stat-bar" aria-hidden="true"></span>
+          <p class="stat-num">07</p>
+          <p class="stat-label">anos em obra</p>
+        </div>
+        <div class="stat" style="--h: 52%">
+          <span class="stat-bar" aria-hidden="true"></span>
+          <p class="stat-num">38</p>
+          <p class="stat-label">obras entregues</p>
+        </div>
+        <div class="stat" style="--h: 74%">
+          <span class="stat-bar" aria-hidden="true"></span>
+          <p class="stat-num">64</p>
+          <p class="stat-label">projectos licenciados</p>
+        </div>
+        <div class="stat" style="--h: 100%">
+          <span class="stat-bar" aria-hidden="true"></span>
+          <p class="stat-num">1</p>
+          <p class="stat-label">equipa, do esboço à chave</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- SECÇÃO DE NOTÍCIAS -->
-<section class="noticias">
+    <section class="section estudio" id="estudio">
+      <div class="wrap">
+        <header class="sheet-head reveal">
+          <span class="axis">B</span>
+          <span class="sheet-name">A-01 · Estúdio</span>
+          <span class="sheet-rule" aria-hidden="true"></span>
+          <span class="sheet-scale">Esc. 1:50</span>
+        </header>
 
-    <div class="noticias-container">
+        <div class="estudio-grid">
+          <div class="estudio-panel reveal">
+            <h2>Arquitectos que vão à obra. Construtores que lêem o projecto.</h2>
+          </div>
 
-        <!-- CABEÇALHO -->
-        <div class="noticias-header">
-            <small>07 - Notícias</small>
-            <h2>Notícias e insights</h2>
+          <div class="estudio-text reveal">
+            <p>
+              Em muitas obras, quem desenha e quem constrói quase não se falam.
+              Na GMS são a mesma equipa. O arquitecto que fez o levantamento
+              acompanha a betonagem, e o encarregado conhece o desenho desde o
+              estudo prévio.
+            </p>
+            <p>
+              O resultado é menos alterações em obra, um orçamento que se
+              cumpre e nenhuma surpresa na entrega. Trabalhamos em moradias,
+              edifícios de habitação, espaços comerciais e reabilitação.
+            </p>
+
+            <ol class="principles">
+              <li><span class="mono">01</span> Visita e levantamento do terreno antes do primeiro traço.</li>
+              <li><span class="mono">02</span> Orçamento por artigo, com medições que o cliente pode conferir.</li>
+              <li><span class="mono">03</span> Relatório semanal de obra, com fotografias e ponto de situação.</li>
+            </ol>
+          </div>
+
+          <figure class="estudio-figure reveal">
+            <img src="assets/img/levantamento-terreno.jpg" width="1100" height="1100" loading="lazy"
+                 alt="Técnico da GMS de colete reflector a preencher uma ficha de levantamento num terreno de solo vermelho">
+            <figcaption class="mono">Fig. 02 — Levantamento de terreno antes do projecto</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section servicos grid-paper" id="servicos">
+      <div class="wrap">
+        <header class="sheet-head reveal">
+          <span class="axis">C</span>
+          <span class="sheet-name">A-02 · Serviços</span>
+          <span class="sheet-rule" aria-hidden="true"></span>
+          <span class="sheet-scale">5 especialidades</span>
+        </header>
+
+        <h2 class="section-title reveal">Cinco frentes de trabalho, um só caderno de encargos.</h2>
+
+        <ol class="service-index">
+          <li class="service reveal">
+            <span class="service-num mono">01</span>
+            <span class="service-code">ARQ</span>
+            <h3>Projecto de arquitectura e licenciamento</h3>
+            <p>Levantamento, estudo prévio, anteprojecto e processo de licenciamento junto da administração municipal.</p>
+            <p class="service-deliv mono">Plantas · Alçados · Cortes · Memória descritiva</p>
+          </li>
+          <li class="service reveal">
+            <span class="service-num mono">02</span>
+            <span class="service-code">OBR</span>
+            <h3>Construção civil e reformas</h3>
+            <p>Moradias, edifícios e reabilitação com equipa própria, das fundações aos acabamentos.</p>
+            <p class="service-deliv mono">Estrutura · Alvenaria · Instalações · Acabamentos</p>
+          </li>
+          <li class="service reveal">
+            <span class="service-num mono">03</span>
+            <span class="service-code">INT</span>
+            <h3>Projecto e decoração de interiores</h3>
+            <p>Distribuição dos espaços, iluminação, mobiliário por medida e escolha de materiais pensados para o uso diário.</p>
+            <p class="service-deliv mono">Layout · Iluminação · Mobiliário · Mapa de acabamentos</p>
+          </li>
+          <li class="service reveal">
+            <span class="service-num mono">04</span>
+            <span class="service-code">EXT</span>
+            <h3>Paisagismo e exteriores</h3>
+            <p>Muros, pavimentos, drenagem de águas pluviais, jardins e zonas de sombra adequadas ao clima.</p>
+            <p class="service-deliv mono">Implantação · Drenagem · Plantação · Pavimentos</p>
+          </li>
+          <li class="service reveal">
+            <span class="service-num mono">05</span>
+            <span class="service-code">FIS</span>
+            <h3>Fiscalização e consultoria técnica</h3>
+            <p>Acompanhamento de obras de terceiros, medições, orçamentação e pareceres técnicos para investidores e particulares.</p>
+            <p class="service-deliv mono">Autos de medição · Relatórios · Pareceres</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section processo" id="processo">
+      <div class="wrap">
+        <header class="sheet-head reveal">
+          <span class="axis">D</span>
+          <span class="sheet-name">A-03 · Processo</span>
+          <span class="sheet-rule" aria-hidden="true"></span>
+          <span class="sheet-scale">Cronograma tipo</span>
+        </header>
+
+        <div class="processo-intro reveal">
+          <h2 class="section-title">Como uma obra avança connosco.</h2>
+          <p>Prazos indicativos para uma moradia T4 de cerca de 300 m². Cada obra tem o seu cronograma, entregue junto com o orçamento.</p>
         </div>
 
-        <!-- CARTÕES -->
-        <div class="noticias-grid">
-
-            <!-- NOTÍCIA 1 -->
-            <article class="noticia-card">
-
-                <img
-                    src="assets/img/noticia1.jpg"
-                    alt="Trabalhadores numa obra de construção"
-                >
-
-                <div class="noticia-conteudo">
-
-                    <span class="categoria">Construção</span>
-
-                    <h3>
-                        Como já descobrimos agora,
-                        o mundo pode mudar
-                    </h3>
-
-                    <a href="#" class="noticia-link" aria-label="Ler notícia">
-                        →
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- NOTÍCIA 2 -->
-            <article class="noticia-card">
-
-                <img
-                    src="assets/img/noticia2.jpg"
-                    alt="Profissional a trabalhar numa obra"
-                >
-
-                <div class="noticia-conteudo">
-
-                    <span class="categoria">Arquitectura</span>
-
-                    <h3>
-                        Casas estão no próximo projecto
-                        de ajuda isolada
-                    </h3>
-
-                    <a href="#" class="noticia-link" aria-label="Ler notícia">
-                        →
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!-- NOTÍCIA 3 -->
-            <article class="noticia-card">
-
-                <img
-                    src="assets/img/noticia3.jpg"
-                    alt="Profissional a trabalhar com ferramentas"
-                >
-
-                <div class="noticia-conteudo">
-
-                    <span class="categoria">Construção</span>
-
-                    <h3>
-                        Guindastes, martelos e pregos.
-                        Essa é a base
-                    </h3>
-
-                    <a href="#" class="noticia-link" aria-label="Ler notícia">
-                        →
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- LOGÓTIPO E DESCRIÇÃO -->
-        <div class="footer-col footer-brand">
-
-            <div class="footer-logo">
-                <span class="logo-icon"></span>
-
-                <div>
-                    <h3>BOLDIXER</h3>
-                    <small>CONSTRUÇÃO</small>
-                </div>
+        <div class="gantt reveal" role="table" aria-label="Cronograma indicativo de uma obra">
+          <div class="gantt-row gantt-head" role="row">
+            <span class="gantt-phase" role="columnheader">Fase</span>
+            <div class="gantt-track gantt-months" role="columnheader" aria-label="Meses 1 a 12">
+              <span>M1</span><span>M2</span><span>M3</span><span>M4</span><span>M5</span><span>M6</span>
+              <span>M7</span><span>M8</span><span>M9</span><span>M10</span><span>M11</span><span>M12</span>
             </div>
+          </div>
+          <div class="gantt-row" role="row">
+            <span class="gantt-phase" role="cell"><b class="mono">01</b> Levantamento e programa</span>
+            <div class="gantt-track" role="cell"><span class="gantt-bar" style="--s:1; --e:2">2 sem.</span></div>
+          </div>
+          <div class="gantt-row" role="row">
+            <span class="gantt-phase" role="cell"><b class="mono">02</b> Estudo prévio</span>
+            <div class="gantt-track" role="cell"><span class="gantt-bar" style="--s:2; --e:3">1 mês</span></div>
+          </div>
+          <div class="gantt-row" role="row">
+            <span class="gantt-phase" role="cell"><b class="mono">03</b> Licenciamento</span>
+            <div class="gantt-track" role="cell"><span class="gantt-bar is-ext" style="--s:3; --e:6">2–3 meses</span></div>
+          </div>
+          <div class="gantt-row" role="row">
+            <span class="gantt-phase" role="cell"><b class="mono">04</b> Projecto de execução</span>
+            <div class="gantt-track" role="cell"><span class="gantt-bar" style="--s:4; --e:6">2 meses</span></div>
+          </div>
+          <div class="gantt-row" role="row">
+            <span class="gantt-phase" role="cell"><b class="mono">05</b> Construção</span>
+            <div class="gantt-track" role="cell"><span class="gantt-bar is-main" style="--s:6; --e:12">6 meses</span></div>
+          </div>
+          <div class="gantt-row" role="row">
+            <span class="gantt-phase" role="cell"><b class="mono">06</b> Entrega e garantia</span>
+            <div class="gantt-track" role="cell"><span class="gantt-bar is-key" style="--s:12; --e:13">Chave</span></div>
+          </div>
+        </div>
+        <p class="gantt-note mono"><span class="swatch swatch-ext"></span> Prazo que depende da administração municipal</p>
+      </div>
+    </section>
 
-            <p>
-                Projectos e construção com atenção ao
-                planeamento, à execução e aos detalhes
-                de cada espaço.
-            </p>
+    <section class="section obras" id="obras">
+      <div class="wrap">
+        <header class="sheet-head reveal">
+          <span class="axis">E</span>
+          <span class="sheet-name">A-04 · Obras</span>
+          <span class="sheet-rule" aria-hidden="true"></span>
+          <span class="sheet-scale">Selecção</span>
+        </header>
 
+        <h2 class="section-title reveal">Projectos recentes.</h2>
+
+        <div class="obras-grid">
+          <article class="obra obra-lg reveal">
+            <div class="obra-drawing">
+              <svg viewBox="0 0 400 260" role="img" aria-label="Alçado de edifício habitacional de quatro pisos">
+                <line class="ground" x1="10" y1="230" x2="390" y2="230"/>
+                <rect class="mass" x="90" y="50" width="220" height="180"/>
+                <rect class="accent" x="250" y="30" width="40" height="200"/>
+                <g class="openings">
+                  <rect x="110" y="70" width="40" height="26"/><rect x="170" y="70" width="40" height="26"/>
+                  <rect x="110" y="110" width="40" height="26"/><rect x="170" y="110" width="40" height="26"/>
+                  <rect x="110" y="150" width="40" height="26"/><rect x="170" y="150" width="40" height="26"/>
+                  <rect x="150" y="190" width="50" height="40"/>
+                </g>
+                <g class="slabs"><line x1="80" y1="100" x2="320" y2="100"/><line x1="80" y1="140" x2="320" y2="140"/><line x1="80" y1="180" x2="320" y2="180"/></g>
+                <g class="cota"><line x1="90" y1="248" x2="310" y2="248"/><line x1="90" y1="242" x2="90" y2="254"/><line x1="310" y1="242" x2="310" y2="254"/><text x="200" y="244">22.00</text></g>
+              </svg>
+            </div>
+            <div class="obra-meta">
+              <span class="tag tag-live">Em obra</span>
+              <h3>Edifício habitacional Morro Bento</h3>
+              <dl>
+                <div><dt>Local</dt><dd>Talatona, Luanda</dd></div>
+                <div><dt>Área</dt><dd>1 840 m²</dd></div>
+                <div><dt>Âmbito</dt><dd>ARQ · OBR</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="obra reveal">
+            <div class="obra-drawing">
+              <svg viewBox="0 0 400 260" role="img" aria-label="Alçado de moradia térrea com cobertura plana e pala">
+                <line class="ground" x1="10" y1="220" x2="390" y2="220"/>
+                <rect class="mass" x="60" y="120" width="190" height="100"/>
+                <rect class="mass" x="230" y="90" width="120" height="130"/>
+                <line class="slab-thick" x1="40" y1="120" x2="260" y2="120"/>
+                <g class="openings"><rect x="80" y="150" width="70" height="70"/><rect x="250" y="120" width="80" height="40"/><rect x="170" y="150" width="40" height="50"/></g>
+                <rect class="accent" x="230" y="90" width="12" height="130"/>
+              </svg>
+            </div>
+            <div class="obra-meta">
+              <span class="tag">Concluída</span>
+              <h3>Moradia T4 Camama</h3>
+              <dl>
+                <div><dt>Local</dt><dd>Camama, Luanda</dd></div>
+                <div><dt>Área</dt><dd>320 m²</dd></div>
+                <div><dt>Âmbito</dt><dd>ARQ · OBR · EXT</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="obra reveal">
+            <div class="obra-drawing">
+              <svg viewBox="0 0 400 260" role="img" aria-label="Alçado de espaço comercial com montra">
+                <line class="ground" x1="10" y1="220" x2="390" y2="220"/>
+                <rect class="mass" x="70" y="80" width="260" height="140"/>
+                <rect class="accent" x="70" y="80" width="260" height="22"/>
+                <g class="openings"><rect x="90" y="130" width="150" height="90"/><rect x="260" y="130" width="50" height="90"/></g>
+                <g class="slabs"><line x1="165" y1="130" x2="165" y2="220"/></g>
+              </svg>
+            </div>
+            <div class="obra-meta">
+              <span class="tag">Concluída</span>
+              <h3>Loja e showroom Viana</h3>
+              <dl>
+                <div><dt>Local</dt><dd>Viana, Luanda</dd></div>
+                <div><dt>Área</dt><dd>460 m²</dd></div>
+                <div><dt>Âmbito</dt><dd>OBR · INT</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="obra reveal">
+            <div class="obra-drawing">
+              <svg viewBox="0 0 400 260" role="img" aria-label="Alçado de reabilitação de edifício antigo com varandas">
+                <line class="ground" x1="10" y1="225" x2="390" y2="225"/>
+                <rect class="mass" x="100" y="60" width="200" height="165"/>
+                <polyline class="mass-line" points="100,60 200,30 300,60"/>
+                <g class="openings"><rect x="125" y="85" width="30" height="45"/><rect x="185" y="85" width="30" height="45"/><rect x="245" y="85" width="30" height="45"/><rect x="125" y="160" width="30" height="65"/><rect x="185" y="160" width="30" height="65"/><rect x="245" y="160" width="30" height="45"/></g>
+                <g class="slabs"><line x1="115" y1="130" x2="165" y2="130"/><line x1="175" y1="130" x2="225" y2="130"/><line x1="235" y1="130" x2="285" y2="130"/></g>
+                <rect class="accent" x="185" y="160" width="30" height="65"/>
+              </svg>
+            </div>
+            <div class="obra-meta">
+              <span class="tag">Concluída</span>
+              <h3>Reabilitação na Maianga</h3>
+              <dl>
+                <div><dt>Local</dt><dd>Maianga, Luanda</dd></div>
+                <div><dt>Área</dt><dd>610 m²</dd></div>
+                <div><dt>Âmbito</dt><dd>OBR · FIS</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section diario grid-paper" id="diario">
+      <div class="wrap diario-grid">
+        <div>
+          <header class="sheet-head reveal">
+            <span class="axis">F</span>
+            <span class="sheet-name">A-05 · Diário de obra</span>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <h2 class="section-title reveal">Notas curtas do estaleiro.</h2>
+          <p class="diario-lead reveal">O que estamos a construir, o que aprendemos e o que convém saber antes de começar uma obra.</p>
         </div>
 
-        <!-- EXPLORAR -->
-        <div class="footer-col">
+        <ol class="log">
+          <li class="log-entry reveal">
+            <time class="mono" datetime="2026-10-14">14.10.2026</time>
+            <span class="log-tag">Obra</span>
+            <h3>Betonagem da laje do 2.º piso no Morro Bento</h3>
+          </li>
+          <li class="log-entry reveal">
+            <time class="mono" datetime="2026-09-29">29.09.2026</time>
+            <span class="log-tag">Licenciamento</span>
+            <h3>Os documentos que a administração pede para aprovar uma moradia</h3>
+          </li>
+          <li class="log-entry reveal">
+            <time class="mono" datetime="2026-09-03">03.09.2026</time>
+            <span class="log-tag">Materiais</span>
+            <h3>Bloco de cimento ou tijolo cerâmico: o que usamos e porquê</h3>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-            <h4>Explore</h4>
-
-            <ul>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#equipa">Equipa</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-
+    <section class="cta" id="orcamento">
+      <div class="wrap cta-inner">
+        <div class="cta-copy">
+          <header class="sheet-head reveal">
+            <span class="axis">G</span>
+            <span class="sheet-name">A-06 · Orçamento</span>
+            <span class="sheet-rule" aria-hidden="true"></span>
+          </header>
+          <h2 class="cta-title reveal">Tem um terreno? Vamos ver o que cabe lá.</h2>
+          <p class="cta-lead reveal">
+            Respondemos em dois dias úteis com uma estimativa inicial e uma
+            data para visitar o terreno.
+          </p>
+          <div class="cta-actions reveal">
+            <a class="btn btn-ink" href="https://wa.me/244927883820?text=Ol%C3%A1%20GMS%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+              Pedir orçamento no WhatsApp <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="link-arrow" href="tel:+244927883820">Ou ligue (+244) 927 883 820</a>
+          </div>
         </div>
 
-        <!-- CONTACTOS -->
-        <div class="footer-col">
+        <svg class="cta-towers reveal" viewBox="0 0 284 320" aria-hidden="true">
+          <g class="cta-lines">
+            <line x1="6" y1="200" x2="6" y2="320"/><line x1="18" y1="190" x2="18" y2="320"/>
+            <line x1="30" y1="180" x2="30" y2="320"/><line x1="42" y1="170" x2="42" y2="320"/>
+            <line x1="96" y1="140" x2="96" y2="320"/><line x1="108" y1="128" x2="108" y2="320"/>
+            <line x1="120" y1="116" x2="120" y2="320"/><line x1="132" y1="104" x2="132" y2="320"/>
+            <line x1="190" y1="70" x2="190" y2="320"/><line x1="202" y1="54" x2="202" y2="320"/>
+            <line x1="214" y1="38" x2="214" y2="320"/><line x1="226" y1="22" x2="226" y2="320"/>
+          </g>
+          <polygon points="54,160 80,180 80,320 54,320"/>
+          <polygon points="144,90 174,112 174,320 144,320"/>
+          <polygon points="238,0 282,30 282,320 238,320"/>
+        </svg>
+      </div>
+    </section>
+  </main>
 
-            <h4>Fale com a gente</h4>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logotipo.png" alt="Logótipo GMS, Guesmans Arquitectura, Construções e Serviços" width="120" height="119" loading="lazy">
+        <p>Guesmans Arquitectura, Construções &amp; Serviços (SU), Lda.</p>
+      </div>
 
-            <p class="footer-contact">
-                <span>☎</span>
-                <a href="tel:+244923456789">
-                    (+244) 923 456 789
-                </a>
-            </p>
+      <nav class="footer-col" aria-label="Rodapé">
+        <h4 class="mono">Índice de folhas</h4>
+        <ul>
+          <li><a href="#estudio"><span class="mono">A-01</span> Estúdio</a></li>
+          <li><a href="#servicos"><span class="mono">A-02</span> Serviços</a></li>
+          <li><a href="#processo"><span class="mono">A-03</span> Processo</a></li>
+          <li><a href="#obras"><span class="mono">A-04</span> Obras</a></li>
+          <li><a href="#diario"><span class="mono">A-05</span> Diário de obra</a></li>
+          <li><a href="#orcamento"><span class="mono">A-06</span> Orçamento</a></li>
+        </ul>
+      </nav>
 
-            <p class="footer-contact">
-                <span>✉</span>
-                <a href="mailto:info@domain.com">
-                    info@domain.com
-                </a>
-            </p>
+      <div class="footer-col">
+        <h4 class="mono">Contacto</h4>
+        <ul>
+          <li><a href="tel:+244927883820">(+244) 927 883 820</a></li>
+          <li><a href="mailto:guemansgerall@gmail.com">guemansgerall@gmail.com</a></li>
+          <li><a href="https://wa.me/244927883820" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
 
-        </div>
-
-        <!-- NEWSLETTER -->
-        <div class="footer-col footer-newsletter">
-
-            <h4>Receba novidades</h4>
-
-            <p>
-                Acompanhe os nossos projectos e conteúdos
-                sobre construção.
-            </p>
-
-            <form class="newsletter-form">
-
-                <input
-                    type="email"
-                    placeholder="Seu e-mail"
-                    aria-label="Seu e-mail"
-                    required
-                >
-
-                <button type="submit">
-                    Inscrever-se
-                    <span>→</span>
-                </button>
-
-            </form>
-
-        </div>
-
+      <div class="footer-col">
+        <h4 class="mono">Sede</h4>
+        <p>Luanda, Angola<br>Segunda a sexta, 8h–17h<br>Sábado, 8h–13h</p>
+      </div>
     </div>
 
-    <!-- PARTE INFERIOR -->
-    <div class="footer-bottom">
-
-        <p>Copyright © Boldixer - 2026</p>
-
-        <div class="footer-legal">
-            <a href="#termos">Termos de uso</a>
-            <a href="#privacidade">Política de privacidade</a>
-        </div>
-
+    <div class="wrap footer-bottom">
+      <p class="mono">© 2026 GMS (SU), Lda</p>
+      <a class="mono" href="#topo">Voltar ao topo ↑</a>
     </div>
+  </footer>
 
-</footer>
-
-
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-const menu = document.querySelector(".header ul");
-
-menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
-    </script>
-
-  
+  <script src="js/main.js"></script>
 </body>
 </html>

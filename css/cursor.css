@@ -1,0 +1,14 @@
+html {
+  cursor: url("../assets/cursors/cursor.svg") 6 5, default;
+}
+
+a,
+button,
+summary,
+label,
+select,
+[role="button"],
+.btn,
+.menu-toggle {
+  cursor: url("../assets/cursors/pointer.svg") 12 4, pointer;
+}
