@@ -166,7 +166,6 @@ p {
   text-decoration: none;
   border: 0;
   border-radius: 2px;
-  cursor: pointer;
   transition: background-color 0.25s var(--ease), color 0.25s var(--ease), transform 0.15s var(--ease), box-shadow 0.25s var(--ease);
 }
 
@@ -346,7 +345,6 @@ p {
   background: none;
   border: 1px solid var(--line);
   border-radius: 2px;
-  cursor: pointer;
   place-items: center;
 }
 
@@ -1266,11 +1264,11 @@ p {
   color: var(--ink);
 }
 
-.btn-ink span {
+.btn-ink i {
   transition: transform 0.25s var(--ease);
 }
 
-.btn-ink:hover span {
+.btn-ink:hover i {
   transform: translateX(4px);
 }
 
