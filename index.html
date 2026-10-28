@@ -403,85 +403,40 @@
       </div>
     </section>
 
-    <section class="section orcamento" id="orcamento">
-      <div class="wrap orcamento-grid">
-        <div class="orcamento-copy">
-          <header class="sheet-head sheet-head-dark reveal">
+    <section class="cta" id="orcamento">
+      <div class="wrap cta-inner">
+        <div class="cta-copy">
+          <header class="sheet-head reveal">
             <span class="axis">G</span>
             <span class="sheet-name">A-06 · Orçamento</span>
             <span class="sheet-rule" aria-hidden="true"></span>
           </header>
-          <h2 class="section-title reveal">Conte-nos o que quer construir.</h2>
-          <p class="reveal">
+          <h2 class="cta-title reveal">Tem um terreno? Vamos ver o que cabe lá.</h2>
+          <p class="cta-lead reveal">
             Respondemos em dois dias úteis com uma estimativa inicial e uma
-            proposta de data para visitar o terreno.
+            data para visitar o terreno.
           </p>
-
-          <ul class="direct reveal">
-            <li>
-              <span class="mono">Telefone</span>
-              <a href="tel:+244927883820">(+244) 927 883 820</a>
-            </li>
-            <li>
-              <span class="mono">WhatsApp</span>
-              <a href="https://wa.me/244927883820" target="_blank" rel="noopener">Escrever mensagem</a>
-            </li>
-            <li>
-              <span class="mono">E-mail</span>
-              <a href="mailto:guemansgerall@gmail.com">guemansgerall@gmail.com</a>
-            </li>
-          </ul>
+          <div class="cta-actions reveal">
+            <a class="btn btn-ink" href="https://wa.me/244927883820?text=Ol%C3%A1%20GMS%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+              Pedir orçamento no WhatsApp <span aria-hidden="true">→</span>
+            </a>
+            <a class="link-arrow" href="tel:+244927883820">Ou ligue (+244) 927 883 820</a>
+          </div>
         </div>
 
-        <form class="quote-form reveal" id="quote-form" novalidate>
-          <div class="field">
-            <label for="f-nome">Nome completo</label>
-            <input id="f-nome" name="nome" type="text" autocomplete="name" required>
-            <p class="field-error" aria-live="polite"></p>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="f-tel">Telefone</label>
-              <input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="9XX XXX XXX" required>
-              <p class="field-error" aria-live="polite"></p>
-            </div>
-            <div class="field">
-              <label for="f-email">E-mail <span class="opt">(opcional)</span></label>
-              <input id="f-email" name="email" type="email" autocomplete="email">
-              <p class="field-error" aria-live="polite"></p>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="f-tipo">Tipo de projecto</label>
-              <select id="f-tipo" name="tipo" required>
-                <option value="">Escolha uma opção</option>
-                <option>Moradia nova</option>
-                <option>Edifício</option>
-                <option>Remodelação ou reforma</option>
-                <option>Interiores</option>
-                <option>Exteriores e paisagismo</option>
-                <option>Fiscalização ou consultoria</option>
-              </select>
-              <p class="field-error" aria-live="polite"></p>
-            </div>
-            <div class="field">
-              <label for="f-local">Local da obra</label>
-              <input id="f-local" name="local" type="text" placeholder="Ex.: Talatona, Luanda">
-              <p class="field-error" aria-live="polite"></p>
-            </div>
-          </div>
-          <div class="field">
-            <label for="f-msg">O que tem em mente?</label>
-            <textarea id="f-msg" name="mensagem" rows="4" placeholder="Área aproximada, número de pisos, prazos, se já tem terreno ou projecto…"></textarea>
-          </div>
-
-          <button class="btn btn-amber btn-block" type="submit">Enviar pedido pelo WhatsApp</button>
-          <p class="form-note">Ao enviar, o WhatsApp abre com o seu pedido já escrito. Basta confirmar.</p>
-          <p class="form-success" id="form-success" role="status" hidden>
-            Pedido preparado. Se o WhatsApp não abriu, ligue para (+244) 927 883 820.
-          </p>
-        </form>
+        <svg class="cta-towers reveal" viewBox="0 0 284 320" aria-hidden="true">
+          <g class="cta-lines">
+            <line x1="6" y1="200" x2="6" y2="320"/><line x1="18" y1="190" x2="18" y2="320"/>
+            <line x1="30" y1="180" x2="30" y2="320"/><line x1="42" y1="170" x2="42" y2="320"/>
+            <line x1="96" y1="140" x2="96" y2="320"/><line x1="108" y1="128" x2="108" y2="320"/>
+            <line x1="120" y1="116" x2="120" y2="320"/><line x1="132" y1="104" x2="132" y2="320"/>
+            <line x1="190" y1="70" x2="190" y2="320"/><line x1="202" y1="54" x2="202" y2="320"/>
+            <line x1="214" y1="38" x2="214" y2="320"/><line x1="226" y1="22" x2="226" y2="320"/>
+          </g>
+          <polygon points="54,160 80,180 80,320 54,320"/>
+          <polygon points="144,90 174,112 174,320 144,320"/>
+          <polygon points="238,0 282,30 282,320 238,320"/>
+        </svg>
       </div>
     </section>
   </main>
@@ -526,108 +481,6 @@
     </div>
   </footer>
 
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-
-    menuToggle.addEventListener("click", () => {
-      const open = navLinks.classList.toggle("is-open");
-      menuToggle.setAttribute("aria-expanded", open);
-      document.body.classList.toggle("menu-open", open);
-    });
-
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        document.body.classList.remove("menu-open");
-      });
-    });
-
-    const header = document.querySelector(".site-header");
-    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 40);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    const revealables = document.querySelectorAll(".reveal, .stats");
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
-      revealables.forEach((el) => observer.observe(el));
-    } else {
-      revealables.forEach((el) => el.classList.add("is-visible"));
-    }
-
-    const sections = document.querySelectorAll("main section[id]");
-    const navMap = new Map([...navLinks.querySelectorAll("a")].map((a) => [a.getAttribute("href").slice(1), a]));
-    const spy = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const link = navMap.get(entry.target.id);
-        if (link && entry.isIntersecting) {
-          navMap.forEach((l) => l.removeAttribute("aria-current"));
-          link.setAttribute("aria-current", "true");
-        }
-      });
-    }, { rootMargin: "-45% 0px -50% 0px" });
-    sections.forEach((s) => spy.observe(s));
-
-    const form = document.getElementById("quote-form");
-    const success = document.getElementById("form-success");
-
-    const rules = {
-      nome: (v) => v.trim().length >= 3 || "Escreva o seu nome completo.",
-      telefone: (v) => v.replace(/\D/g, "").length >= 9 || "Indique um número com pelo menos 9 dígitos.",
-      email: (v) => !v || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || "Este e-mail não parece válido.",
-      tipo: (v) => !!v || "Escolha o tipo de projecto."
-    };
-
-    const check = (field) => {
-      const rule = rules[field.name];
-      if (!rule) return true;
-      const result = rule(field.value);
-      const error = field.closest(".field").querySelector(".field-error");
-      const ok = result === true;
-      field.toggleAttribute("aria-invalid", !ok);
-      error.textContent = ok ? "" : result;
-      return ok;
-    };
-
-    form.querySelectorAll("input, select").forEach((field) => {
-      field.addEventListener("blur", () => check(field));
-      field.addEventListener("input", () => {
-        if (field.hasAttribute("aria-invalid")) check(field);
-      });
-    });
-
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const fields = [...form.querySelectorAll("input, select")];
-      const valid = fields.map(check).every(Boolean);
-      if (!valid) {
-        form.querySelector("[aria-invalid]").focus();
-        return;
-      }
-
-      const data = new FormData(form);
-      const lines = [
-        "Pedido de orçamento — site GMS",
-        `Nome: ${data.get("nome")}`,
-        `Telefone: ${data.get("telefone")}`,
-        data.get("email") && `E-mail: ${data.get("email")}`,
-        `Tipo de projecto: ${data.get("tipo")}`,
-        data.get("local") && `Local da obra: ${data.get("local")}`,
-        data.get("mensagem") && `Detalhes: ${data.get("mensagem")}`
-      ].filter(Boolean);
-
-      window.open(`https://wa.me/244927883820?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener");
-      success.hidden = false;
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
